@@ -93,3 +93,4 @@ Corso <manyToMany> Insegnanti
 Corso <oneToMany> Esami
 Corso <manyToMany> Studenti
 Studente <manyToMany> Esami
+Insegnante <manyToMany> Esami
