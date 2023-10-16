@@ -80,9 +80,9 @@ per ogni appello d’Esame a cui lo Studente ha partecipato, è necessario memor
 - Email | VARCHAR (50), NOTNULL
 - Anno di nascita | YEAR, NULL
 - Media voti | FLOAT (4,2)
-- Fascia reddituale
-- Occupazione
-- Voto diploma
+- Fascia reddituale | VARCHAR (50), NOTNULL
+- Occupazione | VARCHAR (20), NOTNULL 
+- Voto diploma | SMALLINT, NOTNULL
 - Note | TEXT, NULL
 
 
