@@ -21,68 +21,69 @@ per ogni appello d’Esame a cui lo Studente ha partecipato, è necessario memor
 # Requisiti Università
 
 ## Table Dipartimenti
-- Id
-- Nome
-- Indirizzo
-- Email
-- Telefono
-- Numero corsi di laurea
+- Id | PK, BIGINT, AUTO_INCREMENT, UNIQUE, NOT NULL 
+- Nome | VARCHAR (50), NOTNULL
+- Indirizzo | VARCHAR (50), NOTNULL
+- Email | VARCHAR (50), NOTNULL
+- Telefono | VARCHAR (20), NOTNULL
+- Numero corsi di laurea | SMALLINT, NOTNULL
 
 ## Table Corsi di Laurea
-- Id
-- Nome
-- Numero corsi
-- Codice corso di laurea
-- Tipo
-- Requisiti
-- Note
-- Durata
-- Lingua
+- Id | PK, BIGINT, AUTO_INCREMENT, UNIQUE, NOT NULL 
+- Nome | VARCHAR (50), NOTNULL
+- Numero corsi | SMALLINT, NOTNULL
+- Codice corso di laurea | VARCHAR (20), NOTNULL 
+- Tipo | VARCHAR (20), NOTNULL
+- Requisiti | VARCHAR (255), DEFAULT (Nessun requisito richiesto)
+- Note | TEXT, NULL
+- Durata | SMALLINT, NULL
+- Lingua | VARCHAR (50), DEFAULT(Italiano)
 
 ## Table Corsi
-- Id
-- Nome
-- Durata
-- Esami
-- Insegnanti
-- Studenti
-- Note
+- Id | PK, BIGINT, AUTO_INCREMENT, UNIQUE, NOT NULL 
+- Nome | VARCHAR (50), NOTNULL
+- Durata | SMALLINT, NULL
+- Esami | SMALLINT, NULL
+- Insegnanti | VARCHAR (50), NOTNULL
+- Studenti | SMALLINT, NOTNULL
+- Note | TEXT, NULL
 
 
 
 ## Table Insegnanti
-- Id
-- Nome
-- Cognome
-- Anno di nascita
-- Email
-- Note
-- Lingua
+- Id | PK, BIGINT, AUTO_INCREMENT, UNIQUE, NOT NULL 
+- Nome | VARCHAR (50), NOTNULL
+- Cognome | VARCHAR (50), NOTNULL
+- Anno di nascita | YEAR, NOTNULL
+- Email | VARCHAR (50), NOTNULL
+- Note | TEXT, NULL
+- Lingua | VARCHAR (50), DEFAULT(Italiano)
+
 
 
 ## Table Esami
-- Id
-- Nome
-- Tipo
-- Codice
-- Durata
-- obbligatorio
-- CFU
-- Data
+- Id | PK, BIGINT, AUTO_INCREMENT, UNIQUE, NOT NULL 
+- Nome | VARCHAR (50), NOTNULL
+- Tipo | VARCHAR (50), NOTNULL
+- Codice | VARCHAR (10), NOTNULL
+- Durata | SMALLINT, NULL
+- obbligatorio | BOOLEAN, DEFAULT (true)
+- CFU | SMALLINT, NOTNULL
+- Data | DATE, NULL
 
 
 ## Table Studenti
-- Id
-- Nome
-- Cognome
-- Matricola
-- Email
-- Anno di nascita
-- Media voti
+- Id | PK, BIGINT, AUTO_INCREMENT, UNIQUE, NOT NULL 
+- Nome | VARCHAR (50), NOTNULL
+- Cognome | VARCHAR (50), NOTNULL
+- Matricola | VARCHAR (10), NOTNULL
+- Email | VARCHAR (50), NOTNULL
+- Anno di nascita | YEAR, NULL
+- Media voti | FLOAT (4,2)
 - Fascia reddituale
 - Occupazione
 - Voto diploma
-- Note
+- Note | TEXT, NULL
 
 
 ## Relationships 
