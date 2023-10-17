@@ -14,4 +14,4 @@ Dopo aver testato le vostre query con phpMyAdmin, riportatele in un file query.m
 
 5. SELECT * FROM `exams` WHERE HOUR(`hour`) >= 14 AND `date` = '2020-06-20';
 
-6. 
+6. SELECT * FROM `degrees` WHERE `level` = 'magistrale';
