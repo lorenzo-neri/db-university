@@ -9,3 +9,7 @@ Dopo aver testato le vostre query con phpMyAdmin, riportatele in un file query.m
 2. SELECT * FROM `courses` WHERE cfu > 10;
 
 3. SELECT * FROM `students` WHERE TIMESTAMPDIFF(YEAR, date_of_birth, CURRENT_DATE()) > 30;
+
+4. SELECT * FROM `courses` WHERE `period` = 'I semestre' AND `year` = 1;
+
+5. 
