@@ -19,5 +19,5 @@ Dopo aver testato le vostre query con phpMyAdmin, riportatele in un file query.m
 7. SELECT * FROM `departments`
 7. SELECT COUNT(*) AS `departments_count` FROM `departments`;
 
-8.SELECT * FROM `teachers` WHERE `phone` IS NULL;
+8. SELECT * FROM `teachers` WHERE `phone` IS NULL;
 
