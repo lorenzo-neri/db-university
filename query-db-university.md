@@ -6,4 +6,6 @@ Dopo aver testato le vostre query con phpMyAdmin, riportatele in un file query.m
 
 1. SELECT * FROM `students` WHERE YEAR(date_of_birth) = 1990;
 
-2.
+2. SELECT * FROM `courses` WHERE cfu > 10;
+
+3. 
